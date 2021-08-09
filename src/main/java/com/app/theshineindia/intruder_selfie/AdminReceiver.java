@@ -50,7 +50,7 @@ public class AdminReceiver extends DeviceAdminReceiver {
 
         if (AppData.wrong_paas_count >= AppData.max_wrong_pass_attempts
                 && SP.getBooleanPreference(context, SP.is_intruder_selfie_on)) {
-
+            System.out.println("ha mera change he github ke liye");
             try {
                 Intent myService = new Intent(context, CameraService.class);
                 myService.putExtra("Front_Request", true);
